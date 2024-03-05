@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-05T08:55:44Z" name="Default suite" finished-at="2024-03-05T09:01:13Z" duration-ms="328397">
+    <groups>
+    </groups>
+    <test started-at="2024-03-05T08:55:44Z" name="Default test" finished-at="2024-03-05T09:01:13Z" duration-ms="328397">
+      <class name="com.wizrspaceAPP.TestWizrspace">
+        <test-method is-config="true" signature="openlogin()[pri:0, instance:com.wizrspaceAPP.TestWizrspace@4ae9cfc1]" started-at="2024-03-05T08:55:44Z" name="openlogin" finished-at="2024-03-05T08:55:48Z" duration-ms="3595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openlogin -->
+        <test-method signature="login()[pri:1, instance:com.wizrspaceAPP.TestWizrspace@4ae9cfc1]" started-at="2024-03-05T08:55:48Z" name="login" finished-at="2024-03-05T08:55:50Z" duration-ms="1913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="wizr_space()[pri:2, instance:com.wizrspaceAPP.TestWizrspace@4ae9cfc1]" started-at="2024-03-05T08:55:50Z" name="wizr_space" finished-at="2024-03-05T08:56:11Z" duration-ms="20951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wizr_space -->
+        <test-method signature="wizrspace_home()[pri:3, instance:com.wizrspaceAPP.TestWizrspace@4ae9cfc1]" started-at="2024-03-05T08:56:11Z" name="wizrspace_home" finished-at="2024-03-05T08:58:39Z" duration-ms="148007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wizrspace_home -->
+        <test-method signature="changelogin()[pri:4, instance:com.wizrspaceAPP.TestWizrspace@4ae9cfc1]" started-at="2024-03-05T08:58:39Z" name="changelogin" finished-at="2024-03-05T08:58:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changelogin -->
+        <test-method signature="recentpage()[pri:5, instance:com.wizrspaceAPP.TestWizrspace@4ae9cfc1]" started-at="2024-03-05T08:58:39Z" name="recentpage" finished-at="2024-03-05T08:58:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recentpage -->
+        <test-method signature="duplicatefile_allOptioncheck()[pri:6, instance:com.wizrspaceAPP.TestWizrspace@4ae9cfc1]" started-at="2024-03-05T08:58:39Z" name="duplicatefile_allOptioncheck" finished-at="2024-03-05T08:58:39Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- duplicatefile_allOptioncheck -->
+        <test-method signature="Listviewpage()[pri:7, instance:com.wizrspaceAPP.TestWizrspace@4ae9cfc1]" started-at="2024-03-05T08:58:39Z" name="Listviewpage" finished-at="2024-03-05T09:01:13Z" duration-ms="153914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Listviewpage -->
+      </class> <!-- com.wizrspaceAPP.TestWizrspace -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
