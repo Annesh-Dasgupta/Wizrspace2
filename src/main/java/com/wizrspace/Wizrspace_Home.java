@@ -58,8 +58,6 @@ public class Wizrspace_Home extends Wizrspace {
 		Thread.sleep(5000);
 		js.executeScript("arguments[0].muted = true;", driver.findElement(By.className("FilePreview_video_preview__tf8sa")));
 		Thread.sleep(5000);
-		js.executeScript("arguments[0].requestFullscreen();", driver.findElement(By.className("FilePreview_video_preview__tf8sa")));
-		Thread.sleep(5000);
 		driver.findElement(Backopenview).click();
 	}
 	public void documentfileopen() throws InterruptedException {
@@ -78,7 +76,7 @@ public class Wizrspace_Home extends Wizrspace {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("(//div[@class='ShareOption_input_div__lDzsH'])[1]")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.id("recepients")).sendKeys("rimpa");
+		driver.findElement(By.id("recepients")).sendKeys("taniya");
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//div[@class='ShareOption_user_list_cont__KnZWb']")).click();
 		Thread.sleep(5000);
@@ -139,11 +137,8 @@ public class Wizrspace_Home extends Wizrspace {
 		driver.findElement(Renamefileinputarea).sendKeys(" ");
 		Thread.sleep(2000);
 		driver.findElement(Renamefileinputarea).sendKeys(generateRandomId());
-//		driver.findElement(Renamefileinputarea).sendKeys(Keys.CONTROL, "a");
-//		driver.findElement(Renamefileinputarea).sendKeys(Keys.CONTROL, "c");
 		Thread.sleep(2000);
 		driver.findElement(Renamesubmit).click();
-		//		driver.findElement(By.xpath("//html")).click();
 		Thread.sleep(2000);
 
 	}
@@ -291,6 +286,42 @@ public class Wizrspace_Home extends Wizrspace {
 		Thread.sleep(5000);
 		driver.findElement(downloadoption).click();
 		
+		
+	}
+	
+	//grid view multiple file check
+	
+	public void multiplefilecheck() throws InterruptedException {
+		WebElement  checkbox = driver.findElement(By.xpath("(//div[@class='Main_Imagecontainer_checkbox__Pu8Ds'])[1]"));
+		Actions action = new Actions(driver);
+		action.moveToElement(checkbox).perform();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+		Thread.sleep(1000);
+		WebElement  checkbox2 = driver.findElement(By.xpath("(//div[@class='Main_Imagecontainer_checkbox__Pu8Ds'])[2]"));
+		action.moveToElement(checkbox2).perform();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).click();
+		Thread.sleep(1000);
+		WebElement  checkbox3 = driver.findElement(By.xpath("(//div[@class='Main_Imagecontainer_checkbox__Pu8Ds'])[3]"));
+		action.moveToElement(checkbox3).perform();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//input[@type='checkbox'])[3]")).click();
+		Thread.sleep(2000);
+	}
+	
+	public void addtoStarred() throws InterruptedException {
+		Thread.sleep(2000);
+		this.multiplefilecheck();
+		driver.findElement(By.xpath("//div[@class='PreviewOptionChecked_innerDiv__VOpwE'][3]")).click();  //lower modal starred
+		Thread.sleep(5000);
+	}
+	
+	public void delete() throws InterruptedException {
+		this.multiplefilecheck();
+		driver.findElement(By.xpath("//div[@class='PreviewOptionChecked_innerDiv__VOpwE'][2]")).click();     //Lower modal delete
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//div[text()='UNDO']")).click();
 		
 	}
 

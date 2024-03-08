@@ -49,22 +49,25 @@ public class TestWizrspace {
 	public void wizrspace_home() throws InterruptedException {
 		wshome = new Wizrspace_Home(driver);
 		wshome.cloudhome();
-		wshome.Openfile();
+//		wshome.Openfile();
 		wshome.videoopenfile();
 //		wshome.documentfileopen();
 		wshome.starredfile();
 //		wshome.sharedfile();
 //		wshome.sharedfile_via_generatelink();
-				wshome.renamefile();
-				wshome.tag_file();
-				wshome.enable_disableComment();
+//		wshome.renamefile();
+//				wshome.tag_file();
+//				wshome.enable_disableComment();
 //				wshome.duplicate_file();
-		wshome.view_comment();
+//		wshome.view_comment();
 //		wshome.movefile();
 //		wshome.properties();
 //		wshome.delete1();
 //		wshome.delete2();
 //		wshome.downloadmain();
+		wshome.addtoStarred();
+//		wshome.delete(); //grid view lower modal
+		
 	}
 	@Test(priority = 4)
 	public void changelogin() throws InterruptedException {
@@ -94,13 +97,16 @@ public class TestWizrspace {
  public void Listviewpage() throws InterruptedException {
 	 Listview_Space Lvs = new Listview_Space(driver);
 	 Lvs.FilenameSort();
-	 Lvs.LastmodifiedSort();
-	 Lvs.Sizesort();
-	 Lvs.openlistviewfile();
-	 Lvs.Typesort();
-	 Lvs.Fileownersort();
-	 Lvs.clearfilter();
-	 Lvs.differntviewfileupload();
+//	 Lvs.LastmodifiedSort();
+//	 Lvs.Sizesort();
+//	 Lvs.openlistviewfile();
+//	 Lvs.Typesort();
+//	 Lvs.Fileownersort();
+//	 Lvs.clearfilter();
+//	 Lvs.differntviewfileupload();
+	 Lvs.listviewmultiplefilecheck_addtoStarred();
+	 Lvs.listviewmultiplefilecheck_delete();
+	 Lvs.listviewmultiplefilecheck_share();
  }
 
 

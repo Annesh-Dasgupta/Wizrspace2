@@ -96,14 +96,14 @@ public class Wizrspace {
 		}
 	}
 
-	private static String CHARSET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	private static String CHARSET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
 
 	public static String generateRandomId() {
 		Random rand = new Random();
 		char randomChar = CHARSET.charAt(rand.nextInt(CHARSET.length()));
 		int randomInt = rand.nextInt(20);
 
-		String result = String.format("%c%08d", randomChar, randomInt);
+		String result = String.format("%c%08d", randomChar, randomInt, randomChar, randomInt);
 		return result;
 	}
 
@@ -144,16 +144,11 @@ public class Wizrspace {
 		driver.findElement(fileupload).click();
 		By fileinput = By.xpath("//input[@id='file']");
 		Thread.sleep(2000);
-		driver.findElement(fileinput).sendKeys("C:\\Users\\Annesh\\Desktop\\assasinscreed.jpg");
+		driver.findElement(fileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\bird-wings-flying.gif");
 		By changefileinput = By.xpath("//input[@id='myfile']");
 		Thread.sleep(2000);
-		driver.findElement(changefileinput).sendKeys("C:\\Users\\Annesh\\Desktop\\End Run _ Full Movie _ Inspired from 2019 Balakot Airstrike _ Republic Day 2020.mp4");
-		driver.findElement(changefileinput).sendKeys("C:\\\\Users\\\\Annesh\\\\Desktop\\\\crysis.jpg");
-//		driver.findElement(changefileinput).sendKeys("C:\\\\Users\\\\annesh_d\\\\Desktop\\\\wheel on SMCR.txt");
-//		driver.findElement(changefileinput).sendKeys("C:\\\\Users\\\\annesh_d\\\\Desktop\\\\testpdf.pdf");
-//		driver.findElement(changefileinput).sendKeys("C:\\\\Users\\\\annesh_d\\\\Desktop\\\\Testppt.pptx");
-//		driver.findElement(changefileinput).sendKeys("C:\\\\Users\\\\annesh_d\\\\Desktop\\\\TestABC.xlsx");
-//		driver.findElement(changefileinput).sendKeys("C:\\\\Users\\\\annesh_d\\\\Desktop\\\\test123.xls");
+		driver.findElement(changefileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\transformers.jpg");
+		driver.findElement(changefileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\Testvideo.mp4");
 		driver.findElement(Uploadfile_dropdown).click();
 		Thread.sleep(2000);
 		driver.findElement(Custom_expire).click();
@@ -185,14 +180,17 @@ public class Wizrspace {
 		driver.findElement(fileupload).click();
 		By fileinput = By.xpath("//input[@id='file']");
 		Thread.sleep(2000);
-		driver.findElement(fileinput).sendKeys("C:\\Users\\Annesh\\Desktop\\assasinscreed.jpg");
+		driver.findElement(fileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\transformers.jpg");
 		By changefileinput = By.xpath("//input[@id='myfile']");
 		Thread.sleep(2000);
-		driver.findElement(changefileinput).sendKeys("C:\\Users\\Annesh\\Desktop\\transformers.jpg");
-		driver.findElement(changefileinput).sendKeys("C:\\\\Users\\\\Annesh\\\\Desktop\\\\kkr.jpg");
+		driver.findElement(changefileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\transformers.jpg");
+		driver.findElement(changefileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\kkr.jpg");
 		Thread.sleep(2000);
 		driver.findElement(Done_fileUpload).click();
 		Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(30));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Files have been uploaded successfully.']")));
+		driver.findElement(By.xpath("//div[@class='Progressbar_close__Hvoiu']")).click();
 	}
 
 }
