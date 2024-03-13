@@ -144,11 +144,11 @@ public class Wizrspace {
 		driver.findElement(fileupload).click();
 		By fileinput = By.xpath("//input[@id='file']");
 		Thread.sleep(2000);
-		driver.findElement(fileinput).sendKeys("C:\\Users\\Annesh\\Desktop\\assasinscreed.jpg");
+		driver.findElement(fileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\bird-wings-flying.gif");
 		By changefileinput = By.xpath("//input[@id='myfile']");
 		Thread.sleep(2000);
-		driver.findElement(changefileinput).sendKeys("C:\\Users\\Annesh\\Desktop\\assasinscreed.jpg");
-		driver.findElement(changefileinput).sendKeys("C:\\Users\\Annesh\\Desktop\\End Run _ Full Movie _ Inspired from 2019 Balakot Airstrike _ Republic Day 2020.mp4");
+		driver.findElement(changefileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\transformers.jpg");
+		driver.findElement(changefileinput).sendKeys("C:\\Users\\annesh_d\\Desktop\\Testvideo.mp4");
 		driver.findElement(Uploadfile_dropdown).click();
 		Thread.sleep(2000);
 		driver.findElement(Custom_expire).click();

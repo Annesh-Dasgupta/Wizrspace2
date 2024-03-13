@@ -51,66 +51,25 @@ public class TestWizrspace {
 		wshome.cloudhome();
 //		wshome.Openfile();
 		wshome.videoopenfile();
-//		wshome.documentfileopen();					
-//		wshome.addtoStarred(); //grid view lower modal
+//		wshome.documentfileopen();
+		wshome.starredfile();
+//		wshome.sharedfile();
+//		wshome.sharedfile_via_generatelink();
+//		wshome.renamefile();
+//				wshome.tag_file();
+//				wshome.enable_disableComment();
+//				wshome.duplicate_file();
+//		wshome.view_comment();
+//		wshome.movefile();
+//		wshome.properties();
+//		wshome.delete1();
+//		wshome.delete2();
+//		wshome.downloadmain();
+		wshome.addtoStarred();
 //		wshome.delete(); //grid view lower modal
 		
 	}
 	@Test(priority = 4)
-	public void starredfile() throws InterruptedException {
-		wshome.starredfile();
-	}
-	@Test(priority = 5)
-	public void Sharedfile() throws InterruptedException {
-		wshome.sharedfile();
-	}
-	@Test(priority = 6)
-	public void share_via_link() throws InterruptedException {
-		wshome.sharedfile_via_generatelink();
-	}
-	@Test(priority = 7)
-	public void Renamefile() throws InterruptedException {
-		wshome.renamefile();
-	}
-	@Test(priority = 8)
-	public void Tag() throws InterruptedException {
-		wshome.tag_file();
-	}
-	@Test(priority = 9)
-	public void enable_disable_comment() throws InterruptedException {
-		wshome.enable_disableComment();
-	}
-	@Test(priority = 10)
-	public void duplicate_file() {
-		wshome.duplicate_file();
-	}
-	@Test(priority = 11)
-	public void view_comment() throws InterruptedException {
-		wshome.view_comment();
-	}
-	@Test(priority = 12)
-	public void movefile() throws InterruptedException {
-		wshome.movefile();
-	}
-	@Test(priority = 13)
-	public void file_properties() throws InterruptedException {
-		wshome.properties();
-	}
-	@Test(priority = 14)
-	public void delete_and_undo() throws InterruptedException {
-		wshome.delete1();
-	}
-	@Test(priority = 15)
-	public void permanent_delete() throws InterruptedException {
-		wshome.delete2();
-	}
-	@Test(priority = 16)
-	public void downloadfile() throws InterruptedException {
-		wshome.downloadmain();
-	}
-	
-	
-	@Test(priority = 20)
 	public void changelogin() throws InterruptedException {
 //		driver = new ChromeDriver();
 //		driver.manage().window().maximize();
@@ -121,23 +80,23 @@ public class TestWizrspace {
 //		Sharedlogin sl = new Sharedlogin(driver);
 //		sl.shared_with_me();
 	}
-	@Test(priority = 21)
+	@Test(priority = 5)
 	public void recentpage() throws InterruptedException {
 		RecentPage rp = new RecentPage(driver);
 //		rp.scrollrecent();
 	}
 		
-	@Test(priority =22)
+	@Test(priority = 6)
 	public void duplicatefile_allOptioncheck() throws InterruptedException {
 		//		wshome.Openfile();
 		//		wshome.renamefile();
 		//		wshome.tag_file();
 		//		wshome.enable_disableComment();
 	}
- @Test(priority = 23)
+ @Test(priority = 7)
  public void Listviewpage() throws InterruptedException {
 	 Listview_Space Lvs = new Listview_Space(driver);
-//	 Lvs.FilenameSort();
+	 Lvs.FilenameSort();
 //	 Lvs.LastmodifiedSort();
 //	 Lvs.Sizesort();
 //	 Lvs.openlistviewfile();
@@ -145,9 +104,9 @@ public class TestWizrspace {
 //	 Lvs.Fileownersort();
 //	 Lvs.clearfilter();
 //	 Lvs.differntviewfileupload();
-//	 Lvs.listviewmultiplefilecheck_addtoStarred();
-//	 Lvs.listviewmultiplefilecheck_delete();
-//	 Lvs.listviewmultiplefilecheck_share();
+	 Lvs.listviewmultiplefilecheck_addtoStarred();
+	 Lvs.listviewmultiplefilecheck_delete();
+	 Lvs.listviewmultiplefilecheck_share();
  }
 
 

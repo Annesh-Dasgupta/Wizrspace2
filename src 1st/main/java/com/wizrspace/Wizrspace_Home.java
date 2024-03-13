@@ -88,13 +88,13 @@ public class Wizrspace_Home extends Wizrspace {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//option[@value='editor']")).click();
 		Thread.sleep(5000);
-//		driver.findElement(By.xpath("(//div[@class='ShareOption_input_div__lDzsH'])[3]")).click();
-//		Thread.sleep(5000);
-//		driver.findElement(By.xpath("//abbr[@aria-label='February 27, 2024']")).click();
-//		Thread.sleep(5000);
+		driver.findElement(By.xpath("(//div[@class='ShareOption_input_div__lDzsH'])[3]")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//abbr[@aria-label='February 27, 2024']")).click();
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("(//div[@class='ShareOption_input_div__lDzsH'])[4]")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//abbr[@aria-label='March 30, 2024']")).click();
+		driver.findElement(By.xpath("//abbr[@aria-label='February 15, 2024']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//input[@class='ShareOption_inputbox__YGV_E']")).click();
 		Thread.sleep(5000);
@@ -106,18 +106,12 @@ public class Wizrspace_Home extends Wizrspace {
 		
 	}
 	public void sharedfile_via_generatelink() throws InterruptedException {
-		this.video_file_rightclick();
 		driver.findElement(shareoption).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//div[text()='Generate Link']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.className("GenerateLinkModel_copy_icon__cWWsQ")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.className("GenerateLinkModel_cancle_btn__RLZAh")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[text()=' Cancel ']")).click();
-		
-		}
+	}
 	
 	public void starredfile() throws InterruptedException {
 		Actions action = new Actions(driver);
@@ -132,7 +126,6 @@ public class Wizrspace_Home extends Wizrspace {
 		action.contextClick(link1).perform();
 		Thread.sleep(5000);
 		driver.findElement(Starredoption).click();
-		Thread.sleep(5000);
 		driver.findElement(Cloud_home).click();
 	}
 	public void renamefile() throws InterruptedException {
